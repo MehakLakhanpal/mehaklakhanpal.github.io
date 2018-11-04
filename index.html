@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <title>Quiz</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Inconsolata" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Raleway" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    </head>
+    <body>
+        /*------Start Landing Section-------*/
+        <section class="landing-page-container">
+            <div class="landing-page-wrapper">
+                <h1 id="landing-page-heading">Test your knowledge</h1>
+                <div class="landing-inputs-wrapper">
+                <input type="text" id="firstname" placeholder="Enter your firstname">
+                <input type="text" id="lastname" placeholder="Enter your lastname">
+                <button id="start-quiz-btn">Start Quiz</button>
+                </div>
+            </div>
+        </section>
+        /*------End Landing Section-------*/
+        
+        /*------Start Admin Section-------*/
+        <section class="admin-panel-container">
+            <div class="admin-panel-wrapper">
+                <div class="header">
+                    <h2>Add Questions</h2>
+                    <a href=""><button id="admin-logout-btn">Logout</button></a>
+                </div>
+                <div class="forms-wrapper">
+                    <button id="question-update-btn">Update</button>
+                    <button id="question-delete-btn">Delete</button>
+                    <textarea id="new-question-text" cols="" placeholder="New Question"></textarea>
+                    <div class="admin-option-container">
+                        <div class="admin-option-wrapper">
+                            <input type="radio" class="admin-option-0" name="answer" value="0">
+                            <input type="text" class="admin-option admin-option-0" value="">
+                        </div>
+                        <div class="admin-option-wrapper">
+                            <input type="radio" class="admin-option-1" name="answer" value="1">
+                            <input type="text" class="admin-option admin-option-1" value="">
+                        </div>
+                    </div>
+                    
+                    <button id="question-insert-btn">Insert</button>
+                </div>
+                
+                <button id="questions-clear-btn">Clear List</button>
+            </div>
+            
+            <div class="results-list-container">
+                <div class="clear">
+                    <h2>Results</h2>
+                    <button id="results-clear-btn">Clear Results</button>
+                </div>
+                
+                <div class="results-list-wrapper"></div>
+            </div>
+            <div class="inserted-questions-wrapper">
+            </div>
+        </section>
+        /*-------End Admin Section--------*/
+        
+        /*-------Start Quiz Section-------*/
+        <section class="quiz-container">
+            <div class="quiz-wrapper">
+                /*---------mehak-----------*/
+                <h2 id="asked-question-text">Question Text</h2>
+                <div class="instant-answer-container">
+                    <div id="instant-answer-wrapper">
+                        <p id="instant-answer-text">This is correct answer
+                        <button id="next-question-btn">Next</button>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="quiz-options-wrapper">
+                    <div class="choice-0"><span class="choice-0 quiz-options-wrapper-options">A</span>&nbsp; <span class="choice-0">test1</span></div>
+                    <div class="choice-1"><span class="choice-1 quiz-options-wrapper-options">B</span>&nbsp; <span class="choice-1">test2</span></div>
+                    <div class="choice-2"><span class="choice-2 quiz-options-wrapper-options">C</span>&nbsp; <span class="choice-2">test3</span></div>
+                    <div class="choice-3"><span class="choice-3 quiz-options-wrapper-options">D</span>&nbsp; <span class="choice-3">test4</span></div>
+                </div>
+            </div>
+            /*-----------progressBar----------*/
+            <div class="progressBar">
+            <p id="progress">2/20</p>
+                <progress value="30" max="100"></progress>
+            </div>
+        </section>
+        
+        /*---------Start Final Result Page---------*/
+        <section class="final-result-container">
+            <div class="final-result-wrapper">
+                <div class="final-result">
+                    <h2 id="final-score-text">Nick Doe---56</h2>
+                    <a href=""><button id="final-logout-btn" >Logout</button></a>
+                </div>
+            </div>
+        </section>
+        
+        /*---------End Final Result Page---------*/
+    </body>
+    <script src="script.js"></script>
+</html>
